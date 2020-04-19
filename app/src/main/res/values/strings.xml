@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">学无止境</string>
+    <string name="login">登录</string>
+    <string name="register">立即注册</string>
+    <string name="forgetPassword"><u>忘记密码</u></string>
+
+    <dimen name="icon_60">60dp</dimen>
+    <dimen name="text_size_6">6sp</dimen>
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_32">32sp</dimen>
+</resources>

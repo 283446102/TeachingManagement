@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_size_10"
+        android:gravity="center"
+        android:text="试卷"
+        android:textSize="@dimen/text_size_24"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ques_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="题目"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/ques_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <RadioButton
+                    android:id="@+id/ques_an1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radiobutton_background"
+                    android:button="@null"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radiobutton_textcolor" />
+
+                <RadioButton
+                    android:id="@+id/ques_an2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radiobutton_background"
+                    android:button="@null"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radiobutton_textcolor" />
+
+                <RadioButton
+                    android:id="@+id/ques_an3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radiobutton_background"
+                    android:button="@null"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radiobutton_textcolor" />
+
+                <RadioButton
+                    android:id="@+id/ques_an4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radiobutton_background"
+                    android:button="@null"
+                    android:padding="10dp"
+                    android:textColor="@drawable/radiobutton_textcolor" />
+            </RadioGroup>
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/edt_answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rect_2_transparent_blue"
+                android:hint="请输入答案"
+                android:padding="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/turquoise"
+            android:text="上一题" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/turquoise"
+            android:text="下一题" />
+    </LinearLayout>
+
+</LinearLayout>
